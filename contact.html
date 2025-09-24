@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova — Contact</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <span class="brand-logo"></span>
+                <span>Nova</span>
+            </div>
+            <button class="btn icon ghost menu-toggle">☰</button>
+            <ul class="primary">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="work.html">Work</a></li>
+                <li><a class="link" href="pricing.html">Pricing</a></li>
+                <li><a class="link" href="blog.html">Blog</a></li>
+                <li><a class="link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button id="theme-toggle" class="btn ghost">🌙</button>
+                <a class="btn brand" href="pricing.html">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form" class="card">
+            <label>Name <input type="text" name="name" required></label>
+            <label>Email <input type="email" name="email" required></label>
+            <label>Message <textarea name="message" rows="5" required></textarea></label>
+            <label><input type="checkbox" id="agree"> I agree to terms</label>
+            <button class="btn brand" type="submit">Send</button>
+            <p id="notice" style="display:none;margin-top:10px"></p>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="display:flex;justify-content:space-between">
+            <small>© <span id="year"></span> Nova. All rights reserved.</small>
+            <small><a href="#">Privacy</a> • <a href="#">Terms</a></small>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
